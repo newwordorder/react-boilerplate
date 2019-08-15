@@ -1,0 +1,43 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ueno/react-scripts": "1.1.20",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-helmet": "5.2.0",
+    "react-router-dom": "4.3.1",
+    "gsap": "2.1.2",
+    "gsap-tools": "1.0.9",
+    "lodash": "4.17.11",
+    "node-sass": "4.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "11.11.3",
+    "@types/react": "16.8.8",
+    "@types/react-dom": "16.8.2",
+    "@types/react-helmet": "5.0.8",
+    "@types/react-router-dom": "4.3.1",
+    "@ueno/stylelint-config": "1.1.2",
+    "@ueno/tslint-config": "1.0.3",
+    "stylelint": "9.9.0",
+    "tslint": "5.12.0",
+    "tslint-react": "3.6.0",
+    "typescript": "3.3.3333"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "npm run tslint && npm run stylelint",
+    "tslint": "tslint --fix 'src/**/*.{ts,tsx}' -p .",
+    "stylelint": "stylelint 'src/**/*.scss' --syntax scss"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
