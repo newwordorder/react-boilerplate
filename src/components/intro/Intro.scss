@@ -1,19 +1,18 @@
 @import '~styles/config';
 
 .intro {
-  padding: 60px 0;
-
-  border-bottom: 1px solid #e5e5e5;
+  padding: 40px 0;
 
   @media (min-width: $min-768) {
-    padding: 120px 0;
+    padding: 80px 0;
   }
 
   &__col {
     @include grid-col;
 
     @media (min-width: $min-768) {
-      @include grid-col(7);
+      @include grid-col(8);
+      @include grid-offset-left(2);
     }
   }
 

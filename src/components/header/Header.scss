@@ -2,6 +2,7 @@
 
 .header {
   display: block;
+  background-color: #fff;
 
   &__container {
     @include container;
@@ -15,20 +16,106 @@
   }
 
   &__logo {
-    &Svg {
-      display: block;
+    display: flex;
+    text-decoration: none;
 
-      height: 16px;
+    &Svg {
+      display: inline-block;
+
+      height: 48px;
       width: auto;
 
       @media (min-width: $min-768) {
-        height: 18px;
+        height: 48px;
       }
+    }
+
+    &Text {
+      display: inline-block;
+      margin: auto;
+      padding-left: 16px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #000;
     }
   }
 
   &__navigation {
     display: flex;
     margin-left: auto;
+
+    a {
+      margin: 0 16px;
+      font-size: 20px;
+    }
+  }
+
+  &mobile {
+    z-index: 8;
+    top: 0;
+    width: 100%;
+    background-color: #efefef;
+
+    &__container {
+      @include container;
+      height: 60px;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0;
+    }
+
+    &__logo {
+      display: flex;
+      text-decoration: none;
+
+      &Svg {
+        display: inline-block;
+        height: 32px;
+        width: auto;
+      }
+
+      &Text {
+        display: inline-block;
+        margin: auto;
+        padding-left: 16px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #000;
+      }
+    }
+
+    &__drawer {
+      position: fixed;
+      left: 0;
+      z-index: 5;
+      top: 60px;
+      width: 100%;
+      height: calc(100% - 60px);
+      background-color: #efefef;
+      color: #fff;
+      transform: translateX(100%);
+      transition: 300ms ease-in-out;
+    }
+
+    &__navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-left: auto;
+      padding: 2rem;
+      height: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+
+      a {
+        padding: 12px 0;
+        font-size: 20px;
+      }
+    }
   }
 }

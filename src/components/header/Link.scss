@@ -2,18 +2,10 @@
 
 .link {
   display: flex;
-
-  margin-left: 40px;
-
+  margin-left: 0;
   text-decoration: none;
-
   color: #404040;
-
   transition: 200ms opacity ease-in-out;
-
-  &:first-of-type {
-    margin-left: 0;
-  }
 
   &:hover {
     opacity: 0.5;
@@ -21,10 +13,10 @@
 
   &__icon {
     position: relative;
-
     margin-right: 8px;
 
-    path { // stylelint-disable-line
+    path {
+      // stylelint-disable-line
       fill: #404040;
     }
 

@@ -6,6 +6,10 @@
 
 .layout {
   display: block;
-
+  padding-top: 60px;
   min-height: 100vh;
+
+  @media (min-width: $min-768) {
+    padding-top: 120px
+  }
 }
