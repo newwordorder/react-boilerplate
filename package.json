@@ -11,7 +11,7 @@
     "gsap": "2.1.2",
     "gsap-tools": "1.0.9",
     "lodash": "4.17.11",
-    "node-sass": "4.11.0"
+    "node-sass": "4.13.1"
   },
   "devDependencies": {
     "@types/node": "11.11.3",
